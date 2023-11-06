@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+$color-eco: #52AB1C;
+$color-crie-ja:#F1C9FF;
+$cortext:#98C67C;
+$handreally:48em;
+$handnoreally:30em;
+$logo:35em;
+
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .lado-a{
+        display: flex;
+        align-items: center;
+        flex: 3;
+        logo-cafe{
+            margin-left: 2em;
+            display: inline-flex;
+            background-image: url(/img/coffee-break\ 1.svg);
+            width: 35px;
+            height: 35px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .lado-b{
+        font-weight: 400;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex: 3;
+    }
+    button-background{
+        margin-left: 1em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        overflow: hidden;
+        height: 2em;
+        width: 12em;
+        border-radius: 0.3em;
+        border: 2px solid #43B100;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        hr{
+            margin-right:0.5em;
+            margin-left:0.3em;
+            height: 1.5em;
+            border: 1px solid #43B100;
+        }
+
+        bottao-tamanho{
+            width: 100%;
+            height: 100%;
+
+            button{
+                font-family: 'Work Sans', sans-serif;
+                font-size: 15px;
+                font-weight: 700;
+                color: #43B100;;
+                text-align: center;
+                border: none;
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+
+    nav{
+        display: flex;
+        gap: 1em;
+
+        a{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 17px;
+            line-height: normal;
+            font-style: normal;
+            color: black;
+        text-decoration: none;
+
+        &:focus{
+            text-decoration: none;
+        }
+        }
+
+    }
+}
+
+.Inicio{
+    background-color: #AEFF05;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    hand-1{
+        display: inline-flex;
+        width: 5em;
+        height: 5em;
+        position: absolute;
+        background-image: url(/img/hand-cartoon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        left: -7px;
+        width: $handnoreally;
+        height: $handnoreally;
+    }
+    hand-2{
+        display: inline-flex;
+        top: -8px;
+        right: -15px;
+        width: $handreally;
+        height: $handreally;
+        position: absolute;
+        background-image: url(/img/hand-no-cartoon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    logo-custom{
+        display: inline-flex;
+        width: $logo;
+        height: $logo;
+        top: 55px;
+        left: 30%;
+        position: absolute;
+        background-image: url(/img/logo.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.coffe-people{
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .info-A1{
+
+        padding: 0%;
+        margin: 0%;
+        margin-left: -1em;
+        margin-top: 1em;
+            h2{
+                margin: 0%;
+                padding: 0%;
+                font-family: 'Bungee', sans-serif;
+                font-size: 2.5em;
+            }
+            h4{
+                margin: 0%;
+                margin-top: -1.2em;
+                padding: 0%;
+                font-family: 'Bungee', sans-serif;
+                font-size: 2.5em;
+            }
+            h3{
+                margin: 0%;
+                padding: 0%;
+                margin-top: -1em;
+                color: $cortext;
+                font-family: 'Anton', sans-serif;
+                font-weight: 400;
+                font-size: 1.3em;
+            }
+        
+            .bottao-1{
+                cursor: pointer;
+                margin: 0%;
+                margin-top:10em;
+                overflow: hidden;
+                width: 15em;
+                height: 3.5em;
+            
+                button{
+                    cursor: pointer;
+                    color:#98C67C;
+                    font-size: 1.25em;
+                    font-weight: 400;
+                    border-radius:0.5em;
+                    border: solid 1px #52AB1C;
+                    width: 100%;
+                    height: 100%;
+                    font-family: 'Anton', sans-serif;
+                    background-color: #DAFFC3;
+                }
+            }
+            
+        }
+        
+        coffe-shops-boneco{
+        width: 35em;
+        display: flex;
+        height: 35em;
+        background-image: url(/img/Group.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0%;
+        margin-top: 1.5em;
+        }        
+}
+
+.Roleta-Linda{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    span{
+        position: absolute;
+        background-image: url(/img/estrela.png);
+        width: 1.5em;
+        height: 2.5em;
+        background-repeat: no-repeat;
+        display: inline-flex;
+        background-position: center;
+    }
+
+    .estrela{
+        top: 3em;
+        left: 15em;
+    }
+    
+
+    .estrela1{
+        bottom: 5em;
+        right: 17em;
+    }
+    
+
+    .estrela2{
+        top: 15em;
+        left: 20em;
+    }
+    
+
+    .estrela3{
+        top: 25em;
+        left: 10em;
+    }
+
+    .estrela4{
+        top: 9em;
+        right: 18em;
+    }
+
+    .estrela5{
+        top: 20em;
+        right: 20em;
+    }
+    
+    h3{
+        color: #52AB1C;
+        font-weight: 400;
+        font-size: 3.5em;
+        font-family: 'Bungee', sans-serif;
+        text-shadow: 0px 3px 1px wheat;
+    }
+    h4{
+        margin: 0%;
+        margin-top: -2em;
+        color: #D794EE;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        font-size: 1.1em;
+    }
+    roleta-coffes{
+        display: flex;
+        background-image: url(/img/roleta.png);
+        background-position: center;
+        background-size: cover;
+        width: 35em;
+        height: 35em;
+
+        &:hover{
+            animation: floatAnimation9 5s infinite;
+        }
+    }
+
+    @keyframes floatAnimation9 {
+        0%, 100% { transform: rotate(0deg);
+            
+        }
+        10% { transform: rotate(30deg);}
+        20% { transform: rotate(60deg);}
+        30% { transform: rotate(90deg);}
+        60% { transform: rotate(120deg);}
+        70% { transform: rotate(150deg);}
+        80% { transform: rotate(180deg);}
+        90% { transform: rotate(210deg);}
+    }
+}
+
+.Power-Coffee{
+    padding: 0%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+    &:after{
+        z-index: 3;
+        padding: 0%;
+        overflow: hidden;
+        position: absolute;
+        content: '';
+        bottom: -25px;
+        width: 100vw;
+        height: 30vh;
+        background: rgb(174,255,5);
+        background: linear-gradient(0deg, rgba(174,255,5,1) 0%, rgba(255,255,255,0) 100%); 
+}
+
+.card-1{
+    z-index: 1;
+    flex: 2;
+    background-color: rgb(255, 166, 0);
+}
+
+.card-2{
+    z-index: 1;
+    flex: 2;
+    background-color: #D794EE;
+}
+.card-3{
+    z-index: 1;
+    flex: 2;
+    background-color: #98C67C;
+}
+.card-4{
+    z-index: 1;
+    flex:2;
+    background-color: aqua;
+}
+.card-5{
+    z-index: 1;
+    flex: 2;
+    background-color: blue;
+}
+}
+
+.eco-coffe{
+    background-color: #AEFF05;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    color: $color-eco;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20em;
+    svg{
+        z-index: 3;
+        bottom: -3em;
+        position: absolute;
+    }
+
+    coin-green{
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        width: 7em;
+        height: 7em;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/img/coin-green.png);
+        background-repeat: no-repeat;
+
+        @keyframes floatAnimation1 {
+            0%, 100% { transform: translateY(0)  rotate(20deg);
+                
+            }
+            50% { transform: translateY(-20px) rotate(-50deg);}
+        }
+
+        @keyframes floatAnimation2 {
+            0%, 100% { transform: translateY(0)  rotate(-20deg);
+                
+            }
+            50% { transform: translateY(-15px) rotate(10deg);}
+        }
+
+        @keyframes floatAnimation3 {
+            0%, 100% { transform: translateY(0)  rotate(15deg);
+                
+            }
+            50% { transform: translateY(-20px) rotate(-30deg);}
+        }
+
+        @keyframes floatAnimation4 {
+            0%, 100% { transform: translateY(0)  rotate(-30deg);
+                
+            }
+            50% { transform: translateY(-20px) rotate(50deg);}
+        }
+
+        @keyframes floatAnimation5 {
+            0%, 100% { transform: translateY(0) rotate(-50deg);;
+                
+            }
+            50% { transform: translateY(-20px) rotate(50deg);}
+        }
+
+    }
+
+    .um{
+        animation: floatAnimation1 5s ease infinite;
+        position: absolute;
+        top: -2em;
+        left: 1px;
+        z-index: 4;
+    }
+
+    .dois{
+        z-index: 4;
+        animation: floatAnimation2  3s ease-out infinite;
+        transform: rotate(-20deg);
+        position: absolute;
+        bottom: 20em;
+        right: -3em;
+    }
+
+    .tres{
+        z-index: 2;
+        animation: floatAnimation3 4s ease-out infinite;
+        transform: rotate(-20deg);
+        position: absolute;
+        bottom: 5em;
+        left: 7em;
+    }
+
+    .quatro{
+        animation: floatAnimation4 5s infinite;
+        transform: rotate(20deg);
+        position: absolute;
+        bottom: 5em;
+        right: 10em;
+        z-index: 4;
+    }
+
+    .cinco{
+        animation: floatAnimation5 4s infinite;
+        position: absolute;
+        top: -3em;
+        right: 40em;
+        z-index: 5;
+    }
+
+
+    eco-coffe-lindo{
+        margin: 0%;
+        margin-right: 0.1em;
+        position: absolute;
+        display: inline-flex;
+        width: 25em;
+        height: 30em;
+        background-image: url(/img/pincoffee.png);
+        background-position: 0px -3em;
+        background-size: cover;
+        
+    }
+
+    h3{
+
+        font-weight: 400;
+        font-size: 2em;
+        animation: changeFont 10s infinite;
+    }
+    @keyframes changeFont {
+        0%, 100% { font-family: 'Anton', sans-serif; }
+        40% { font-family: Times New Roman, serif; 
+              font-weight: 800;}
+        50% { font-family: Verdana, sans-serif; 
+              font-weight: 800;}
+        60% { font-family: arial, serif; 
+              font-weight: 800;}
+        70% { font-family: Courier New, monospace; 
+              font-weight: 800;}
+    }
+        svg{
+        z-index: 3;
+        bottom: -3em;
+        position: absolute;
+      }
+}
+
+.ainda-tem{
+    position: relative;
+    background-color: black;
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ainda-nao-tem{
+        display: inline-flex;
+        width: 30em;
+        height: 50em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(/img/ainda-nao.svg);
+    }
+
+    h2{
+        margin-top: -0.2em;
+        font-family: 'Anton', sans-serif; 
+        font-weight: 400;
+        font-size: 1.7em;
+        color: $color-crie-ja;
+    }
+
+    .criou{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        gap: 2em;
+    }
+
+    bottao-ent{
+        display: flex;
+        justify-content: center;
+        width: 13em;
+        height: 4em;
+        button{
+            border-radius: 0.5em;
+            border: 1px solid #751398;
+            background: #F1C9FF;
+            width: 100%;
+            height: 100%;   
+            color: #AA19DD;
+            font-family: 'Anton'; 
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: all 0.5s;
+            &:hover{
+                background: #b100f1;
+                color: #F1C9FF;
+            }
+        }
+    }
+
+    bottao-cad{
+        display: flex;
+        justify-content: center;
+        width: 13em;
+        height: 4em;
+        button{
+            border-radius: 0.5em;
+            border: 1px solid #751398;
+            background: #F1C9FF;
+            width: 100%;
+            height: 100%;   
+            color: #AA19DD;
+            font-family: 'Anton'; 
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            transition: all 0.5s;
+            &:hover{
+                background: #b100f1;
+                color: #F1C9FF;
+            }
+        }
+    }
+
+    coin-purple{
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        width: 7em;
+        height: 7em;
+        background-position: center;
+        background-size: cover;
+        background-image: url(/img/coin-purple.png);
+        background-repeat: no-repeat;
+    }
+
+    .purple-um{
+        animation: floatAnimation1 4s ease-out infinite;
+        z-index: 5;
+        position: absolute;
+        top: 0em;
+        right: 25em;
+    }
+
+    .purple-dois{
+        animation: floatAnimation1 4s ease-out infinite;
+        z-index: 5;
+        position: absolute;
+        bottom: 0em;
+        left: 10em;
+    }
+
+    .purple-tres{
+        animation: floatAnimation2 4s ease-out infinite;
+        z-index: 5;
+        position: absolute;
+        bottom: 14em;
+        left: -2em;
+    }
+
+    .purple-quatro{
+        animation: floatAnimation5 4s ease-out infinite;
+        z-index: 5;
+        position: absolute;
+        top: 14em;
+        right: -2em;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.69em;
+    width: 100vw;
+    font-weight: normal;
+    height: 5vw;
+    background-color: #751398;
+    color: #C95EEF;
+    font-family:'Times New Roman', Times, serif;
+}
