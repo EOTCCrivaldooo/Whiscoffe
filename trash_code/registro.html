@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        :root{
+            --bg-realy:#AEFF05;
+            --bg-button:#AA19DD;
+            --bg-input:#F1C9FF;
+            --stroke-input:#751398;
+            --color-h3:#AA19DD;
+            --color-placeholder:#C95EEF;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-realy);
+        }
+        section{
+            font-family: 'Anton', sans-serif;
+            width: 43%;
+            height: 50%;
+        }
+        .card-login{
+            gap: 1.5%;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .goodday{
+            background-image: url(Group\ 48.svg);
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: 75%;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -190px;
+        }
+
+        .inputs-labels{
+            z-index: 2;
+        }
+            .inputs-labels h3{
+                
+                color: var(--color-h3);
+                font-weight: 400;
+                font-size: 1.1em;
+            }
+            .inputs-labels input{
+                font-family: 'Anton', sans-serif;
+                background-color: var(--bg-input);
+                border: solid 0.5px var(--stroke-input);
+                width: 30em;
+                height: 2.5em;
+                border-radius: 0.5em;
+            }
+                .inputs-labels ::placeholder{
+                    color: var(--color-placeholder);
+                    padding-left: 1em;
+                    text-decoration: underline;
+                    font-weight: 300;
+                    font-size: 1.1em;
+                }
+                #senha1{
+                    margin-bottom: 0.5em;
+                }
+            #btnip{
+                font-family: 'Anton', sans-serif;
+                background-color: var(--bg-button);
+                width: 13em;
+                height: 3em;
+                border-radius: 0.5em;
+                border: 0px solid;
+                color: white;
+                font-weight: 300;
+            }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card-login">
+            <div class="goodday"> </div>
+
+            <div class="inputs-labels">
+                <h3>email ou número de telefone:</h3>
+                <input type="text" name="email" id="email">
+            </div>
+
+
+            <div class="inputs-labels">
+                <h3>senha:</h3>
+                <input type="password" name="senha" id="senha" placeholder="crie uma senha forte!">
+            </div>
+
+            <div class="inputs-labels">
+                <h3>senha:</h3>
+                <input type="password" name="senha" id="senha1" placeholder="insira a senha novamente">
+            </div>
+
+            <input type="button" value="Registar" id="btnip">
+        </div>
+    </section>
+</body>
+</html>

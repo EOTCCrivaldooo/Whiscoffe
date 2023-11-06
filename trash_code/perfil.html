@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <style>
+        :root{
+            --bg-realy:#AEFF05;
+            --bg-card:#ffffff;
+            --bg-cards:#3f8514e3;
+            --bg-button:#AA19DD;
+            --bg-input:#F1C9FF;
+            --stroke-input:#751398;
+            --color-h3:#AA19DD;
+            --color-placeholder:#C95EEF;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--bg-realy);
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 5em;
+        }
+        foto{
+            width: 14em;
+            height: 14em;
+            border-radius: 50%;
+            background-color: #3A3A3A;
+            border: solid 2px #F1F1F1;
+            box-shadow: 0px 10px 4px -2px #0000004f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+            pin{
+                width: 100%;
+                height: 100%;
+                background-image: url(/profile-img/cranio\(8\)\ 1.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 75%;
+                border-radius: 50%;
+            }
+
+        .card-perfil{
+            margin-top: 4em;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.651);
+            align-items: center;
+            background-color: var(--bg-card);
+            display: flex;
+            flex-direction: column;
+            gap: 0.2em;
+            width: 20em;
+            height: 20em;
+            border-radius: 0.5em;
+        }
+            .nickname-real{
+                font-family: Arial;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            .email-real{
+                font-weight: 400;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        .cards-profiles{
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.651);
+            align-items: center;
+            background-color: var(--bg-cards);
+            display: flex;
+            flex-direction: column;
+            gap: 0.2em;
+            width: 40em;
+            height: 15em;
+            border-radius: 0.5em;
+            justify-content: center;
+        }
+        .lado-cima{
+            gap: 1em;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .lado-baixo{
+            gap: 1em;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .background-input{
+            overflow: hidden;
+            width: 5.5em;
+            height: 5.5em;
+            border-radius: 50em;
+            border: solid 1px black;
+            box-shadow: 0px 0px 5px 0px rgba(253, 253, 253, 0.356);
+        }
+        .cards-profiles input{
+            border: none;
+            background-color: #3a3a3ab2;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        #foto1{
+            background-image: url(/profile-img/cranio\(1\)\ 2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto2{
+            background-image: url(/profile-img/cranio\(2\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto3{
+            background-image: url(/profile-img/cranio\(3\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto4{
+            background-image: url(/profile-img/cranio\(4\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto5{
+            background-image: url(/profile-img/cranio\(5\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto6{
+            background-image: url(/profile-img/cranio\(6\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto7{
+            background-image: url(/profile-img/cranio\(7\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto8{
+            background-image: url(/profile-img/cranio\(8\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto9{
+            background-image: url(/profile-img/cranio\(9\)\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        #foto10{
+            background-image: url(/profile-img/gorro\ 1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 75%;
+            border-radius: 50%;
+        }
+        .cards-geral{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000000;
+            margin-top: 4em;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card-perfil">
+            <foto><pin></pin></foto>
+            <h4 class="nickname-real">Nickname</h4>
+            <h4 class="email-real">email@gmail.com</h4>
+        </div>
+        <div class="cards-geral">
+        <form action="" method="post">
+            <h2>Foto de Perfil</h2>
+            <div class="cards-profiles">
+                <div class="lado-cima">
+
+                    <div class="background-input">
+                        <input type="button" name="" id="foto1">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto2">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto3">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto4">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto5">
+                    </div>
+
+
+                </div>
+                <div class="lado-baixo">
+
+                    <div class="background-input">
+                        <input type="button" name="" id="foto6">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto7">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto8">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto9">
+                    </div>
+                    <div class="background-input">
+                        <input type="button" name="" id="foto10">
+                    </div>
+
+                </div>
+            </div>
+            <div class="configs">
+                <h3>Nome:</h3>
+                <input type="text" name="" id="">
+            </div>
+            
+            <div class="configs">
+                <h3>Apelido:</h3>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="configs">
+                <h3>Email:</h3>
+                <input type="text" name="" id="">
+            </div>
+
+            <div class="configs">
+                <h3>Cpf:</h3>
+                <input type="text" name="" id="">
+            </div>
+            
+        </form>
+    </div>
+    </section>
+</body>
+</html>
